@@ -12,7 +12,7 @@ echo.
 echo Выберите утилиту:
 echo.
 echo 1) APK Installer
-echo 2) Imageq (Вывод экрана Quest) (ещё не сделал)
+echo 2) Imageq (Вывод экрана Quest)
 echo.
 set /p choice=Введите номер и нажмите Enter: 
 
@@ -36,7 +36,8 @@ goto menu
 if exist "utilites\imageq\imageq.bat" (
     call "utilites\imageq\imageq.bat"
 ) else (
-    echo Ошибка: Я ещё не сделал.
+    echo Ошибка: Файл utilites\apkinstaller\imageq.bat не найден!
     pause
 )
+
 goto menu
